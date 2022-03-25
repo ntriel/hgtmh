@@ -1,3 +1,5 @@
+# 1.0.10
+changed the harvest message to include who rolled the check
 # 1.0.9
 fixed typo in roll breakdown
 # 1.0.8
