@@ -109,7 +109,7 @@ Hooks.on('renderChatMessage', (chatItem, html) => {
             theElement.setAttribute("class", "hgtmh-rolled-button");
 			
 			let rollBreakdown = `1d20(${roll.dice[0].total} + prof(${prof}) + ${ability}(${abil}))`;
-            theElement.setAttribute("title", roll.result);
+            theElement.setAttribute("title", rollBreakdown);
 			
             //console.log("htmlDoc.singleNodeValue.innerHTML", htmlDoc.children[0].children[1].innerHTML);
             if (game.user.isGM) {
