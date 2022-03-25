@@ -1,7 +1,6 @@
 
 Hooks.on("init", async function () {
-    //console.log("This code runs once the Foundry VTT software begins its initialization workflow.");
-
+    
 });
 
 Hooks.on("ready", async function () {
@@ -50,8 +49,8 @@ Hooks.on('renderChatMessage', (chatItem, html) => {
     var htmlDoc = parser.parseFromString(chatItem.data.content, 'text/html');
     let theElement = htmlDoc.evaluate(`//div[@data-hgtmh="true"]`, htmlDoc, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null);
     if (theElement.singleNodeValue != null) {
-        console.log("theElement.singleNodeValue", theElement.singleNodeValue);
-        console.log("theElement.singleNodeValue.outerHTML", theElement.singleNodeValue.outerHTML);
+        //console.log("theElement.singleNodeValue", theElement.singleNodeValue);
+        //console.log("theElement.singleNodeValue.outerHTML", theElement.singleNodeValue.outerHTML);
         let content = theElement.singleNodeValue.outerHTML.replaceAll(`data-hgtmh="true"`, `data-hgtmh="false"`);
         let id1 = Math.floor(Math.random() * 100000000);
         let id2 = Math.floor(Math.random() * 100000000);
@@ -64,13 +63,13 @@ Hooks.on('renderChatMessage', (chatItem, html) => {
         if (game.user.isGM) {
             chatItem.update({
                 content: content
-            }).then(console.log(chatItem));
+            })
         }
 
     }
 
     html.find(".hgtmh-roll-button").click(async e => {
-        console.log(e);
+        //console.log(e);
         if (e.currentTarget.attributes["data-rolled"].value == 'false') {
 
             let actor;
@@ -108,8 +107,11 @@ Hooks.on('renderChatMessage', (chatItem, html) => {
             theElement.innerText = theResult;
             theElement.setAttribute("data-rolled", "true");
             theElement.setAttribute("class", "hgtmh-rolled-button");
+			
+			let rollBreakdown = `1d20(${roll.Die[0].total} + prof(${prof}) + ${ability}(${abil}))`;
             theElement.setAttribute("title", roll.result);
-            console.log("htmlDoc.singleNodeValue.innerHTML", htmlDoc.children[0].children[1].innerHTML);
+			
+            //console.log("htmlDoc.singleNodeValue.innerHTML", htmlDoc.children[0].children[1].innerHTML);
             if (game.user.isGM) {
                 chatMessage.update({
                     content: htmlDoc.children[0].children[1].innerHTML
@@ -125,24 +127,6 @@ Hooks.on('renderChatMessage', (chatItem, html) => {
 
     });
 
-    // html.find(".hgtmh-roll-button").mouseenter(e=>{
-    // console.log("e",e);
-    // if(e.target.getAttribute('src') == d20)
-    // {
-    // e.target.setAttribute("src", d20Hover)
-    // }
-    // });
-    // html.find(".hgtmh-roll-button").mouseout(e=>{
-    // console.log("e",e);
-    // if(e.target.getAttribute('src') == d20Hover)
-    // {
-    // e.target.setAttribute("src", d20)
-    // }
-    // });
-
-    // if(){
-
-    // }
 });
 
 function getSkill(type) {
