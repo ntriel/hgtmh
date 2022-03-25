@@ -5,7 +5,7 @@ Hooks.on("init", async function () {
 });
 
 Hooks.on("ready", async function () {
-    game.socket.on(`module.helinanas-guide-to-monster-hunting`, (data) => {
+    game.socket.on(`module.hgtmh`, (data) => {
         switch (data.action) {
         case "updateChatMessage":
             if (game.user.isGM) {
@@ -115,7 +115,7 @@ Hooks.on('renderChatMessage', (chatItem, html) => {
                     content: htmlDoc.children[0].children[1].innerHTML
                 });
             } else {
-                game.socket.emit(`module.helinanas-guide-to-monster-hunting`, {
+                game.socket.emit(`module.hgtmh`, {
                     "action": "updateChatMessage",
                     "chatMessage": chatMessage.id,
                     "content": htmlDoc.children[0].children[1].innerHTML
