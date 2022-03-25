@@ -108,7 +108,7 @@ Hooks.on('renderChatMessage', (chatItem, html) => {
             theElement.setAttribute("data-rolled", "true");
             theElement.setAttribute("class", "hgtmh-rolled-button");
 			
-			let rollBreakdown = `1d20(${roll.Die[0].total} + prof(${prof}) + ${ability}(${abil}))`;
+			let rollBreakdown = `1d20(${roll.dice[0].total} + prof(${prof}) + ${ability}(${abil}))`;
             theElement.setAttribute("title", roll.result);
 			
             //console.log("htmlDoc.singleNodeValue.innerHTML", htmlDoc.children[0].children[1].innerHTML);
