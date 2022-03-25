@@ -26,5 +26,5 @@
 	"socket": true,
 	"url": "https://github.com/ntriel/hgtmh",
 	"download": "https://github.com/ntriel/hgtmh/archive/v1.0.0.zip",
-	"manifest": "https://raw.githubusercontent.com/ntriel/hgtmh/master/module.json",
+	"manifest": "https://raw.githubusercontent.com/ntriel/hgtmh/master/module.json"
 }
