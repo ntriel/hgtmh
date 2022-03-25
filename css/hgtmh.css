@@ -17,6 +17,17 @@
 	line-height: 30px;
 }
 
-.hgtmh-total{
-	
+.hgtmh-30-square{
+	width:30px;
+	height:30px;
+}
+
+.hgtmh-harvest-roller{
+	text-align: right;
+	width: 30px;
+}
+
+.hgtmh-harvest-player-img{
+	width:30px;
+	height:auto;
 }
