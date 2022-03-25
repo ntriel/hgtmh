@@ -7,7 +7,7 @@
 	}, {
 		"name": "TheRedMage#9054"
 	}],
-	"version": "1.0",
+	"version": "1.0.0",
 	"minimumCoreVersion": "0.8.8",
 	"compatibleCoreVersion": "9",
 	"styles": [
