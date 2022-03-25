@@ -2,7 +2,7 @@
 	"name": "hgtmh",
 	"title": "Helinana's Guide to Monster Hunting",
 	"description": "A simple module which adds a user specific to do list.",
-	"version": "1.0.12",
+	"version": "1.0.13",
 	"minimumCoreVersion": "0.8.8",
 	"compatibleCoreVersion": "9",
 	"system": "dnd5e",
@@ -23,12 +23,12 @@
 			"name": "helinanas-harvesting-macros",
 			"label": "Helinana's Harvesting Macros",
 			"system": "dnd5e",
-			"path": "packs/helinanas-harvesting-macros",
+			"path": "./packs/helinanas-harvesting-macros.db",
 			"entity": "Macro"
 		}
 	],
 	"url": "https://github.com/ntriel/hgtmh",
-	"download": "https://github.com/ntriel/hgtmh/archive/v1.0.12.zip",
+	"download": "https://github.com/ntriel/hgtmh/archive/v1.0.13.zip",
 	"manifest": "https://raw.githubusercontent.com/ntriel/hgtmh/main/module.json",
 	"readme": "https://github.com/ntriel/hgtmh/blob/main/README.md",
 	"changelog": "https://github.com/ntriel/hgtmh/blob/main/CHANGELOG.md",
