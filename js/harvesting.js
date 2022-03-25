@@ -24,11 +24,11 @@ let HARVEST_MESSAGE = `
 	<p>{skillReq}</p>
 	<table data-creatureType="{creatureType}" data-creatureName="{creatureName}">
 		<tr>
-			<th>Assessment Check</th>
+			<th title="Intelligence Check">Assessment Check</th>
 			<th><div id='{id1}' class='hgtmh-roll-button' src='{d20}' title="" type="image" width="30" height="30" data-rolled='false' data-ability="int"></div></th>
 		</tr>
 		<tr>
-			<th>Carving Check</th>
+			<th title="Dexterity Check">Carving Check</th>
 			<th><div id='{id2}' class='hgtmh-roll-button' src='{d20}' title="" type="image" width="30" height="30" data-rolled='false' data-ability="dex"></div></th>
 		</tr>
 	</table>
