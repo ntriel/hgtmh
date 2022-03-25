@@ -23,12 +23,14 @@ let HARVEST_MESSAGE = `
 	<p>{skillReq}</p>
 	<table data-creatureType="{creatureType}" data-creatureName="{creatureName}">
 		<tr>
-			<th title="Intelligence Check">Assessment Check</th>
-			<th><div id='{id1}' class='hgtmh-roll-button' src='{d20}' title="" type="image" width="30" height="30" data-rolled='false' data-ability="int"></div></th>
+			<th title="Intelligence Check" >Assessment Check</th>
+			<th class='hgtmh-harvest-roller' ></th>
+			<th class='hgtmh-30-square'><div id='{id1}' class='hgtmh-roll-button' src='{d20}' title="" type="image" width="30" height="30" data-rolled='false' data-ability="int"></div></th>
 		</tr>
 		<tr>
-			<th title="Dexterity Check">Carving Check</th>
-			<th><div id='{id2}' class='hgtmh-roll-button' src='{d20}' title="" type="image" width="30" height="30" data-rolled='false' data-ability="dex"></div></th>
+			<th title="Dexterity Check" >Carving Check</th>
+			<th class='hgtmh-harvest-roller' ></th>
+			<th class='hgtmh-30-square'><div id='{id2}' class='hgtmh-roll-button' src='{d20}' title="" type="image" width="30" height="30" data-rolled='false' data-ability="dex"></div></th>
 		</tr>
 	</table>
 	<table>
@@ -58,8 +60,13 @@ Hooks.on('renderChatMessage', (chatItem, html) => {
 
         let creatureType = theElement.singleNodeValue.attributes["data-creatureType"].value;
         let creatureName = theElement.singleNodeValue.attributes["data-creatureName"].value;
+		
+		
+		
 		let skillReq = getSkill(creatureType);
         content = HARVEST_MESSAGE.replaceAll("{id1}", id1).replaceAll("{id2}", id2).replaceAll("{id3}", id3).replaceAll("{d20}", d20).replaceAll("{creatureType}", creatureType).replaceAll("{creatureName}", creatureName).replaceAll("{skillReq}",skillReq);
+		
+		
         if (game.user.isGM) {
             chatItem.update({
                 content: content
@@ -71,7 +78,7 @@ Hooks.on('renderChatMessage', (chatItem, html) => {
     html.find(".hgtmh-roll-button").click(async e => {
         //console.log(e);
         if (e.currentTarget.attributes["data-rolled"].value == 'false') {
-
+			
             let actor;
             if (game.user.role == 4) {
                 actor = canvas.tokens.controlled[0].actor;
@@ -110,6 +117,15 @@ Hooks.on('renderChatMessage', (chatItem, html) => {
 			
 			let rollBreakdown = `1d20(${roll.dice[0].total}) + prof(${prof}) + ${ability}(${abil})`;
             theElement.setAttribute("title", rollBreakdown);
+			
+			// theElement = htmlDoc.evaluate(`(//div[@id='${e.currentTarget.attributes["id"].value}']/../../th)[2]`, htmlDoc, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null);
+			// console.log(theElement.singleNodeValue);
+			// console.log(actor.name);
+			// theElement.singleNodeValue.innerText = actor.name.split(" ")[0];
+			
+			theElement = htmlDoc.evaluate(`(//div[@id='${e.currentTarget.attributes["id"].value}']/../../th)[2]`, htmlDoc, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+			theElement.innerHTML = `<img title="${actor.name}" class="hgtmh-harvest-player-img" src="${actor.img}" />`;
+			
 			
             //console.log("htmlDoc.singleNodeValue.innerHTML", htmlDoc.children[0].children[1].innerHTML);
             if (game.user.isGM) {
