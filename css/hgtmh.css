@@ -27,7 +27,16 @@
 	width: 30px;
 }
 
+.hgtmh-roller-name{
+	width: 30%;
+	height:30px;
+    text-align: right;
+	padding-right:5px;
+}
+
 .hgtmh-harvest-player-img{
-	width:30px;
+	width:100%;
 	height:auto;
+	display: inline;
+	float:right;
 }
