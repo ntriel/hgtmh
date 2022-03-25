@@ -1,0 +1,30 @@
+{
+	"name": "helinanas-guide-to-monster-hunting",
+	"title": "Helinana's Guide to Monster Hunting",
+	"description": "A simple module which adds a user specific to do list.",
+	"authors": [{
+		"name": "Νtriel#9341"
+	}, {
+		"name": "TheRedMage#9054"
+	}],
+	"version": "1.0",
+	"minimumCoreVersion": "0.8.8",
+	"compatibleCoreVersion": "9",
+	"languages": [
+		{
+			"lang": "en",
+			"name": "English",
+			"path": "languages/en.json"
+		}
+	],
+	"styles": [
+		"css/hgtmh.css"
+	],
+	"scripts": [
+		"js/harvesting.js"
+	],
+	"socket": true,
+	"url": "https://github.com/manuelVo/foundryvtt-socketlib",
+	"download": "https://github.com/manuelVo/foundryvtt-socketlib/archive/v1.0.0.zip",
+	"manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-socketlib/master/module.json",
+}
