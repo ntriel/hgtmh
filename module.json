@@ -19,7 +19,7 @@
 	],
 	"url": "https://github.com/ntriel/hgtmh",
 	"download": "https://github.com/ntriel/hgtmh/archive/v1.0.1.zip",
-	"manifest": "https://github.com/ntriel/hgtmh/releases/tag/v1.0.1/download/module.json",
+	"manifest": "https://raw.githubusercontent.com/ntriel/hgtmh/v1.0.1/module.json",
 	"readme": "https://github.com/ntriel/hgtmh/blob/main/README.md",
 	"changelog": "https://github.com/ntriel/hgtmh/blob/main/CHANGELOG.md",
 	"bugs": "https://github.com/ntriel/hgtmh/issues",
