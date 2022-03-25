@@ -1,3 +1,5 @@
+# 1.0.13
+fixed packs in module.json
 # 1.0.12
 added packs file and a compendium holding the macro for harvesting<br>
 added system info to module.json
