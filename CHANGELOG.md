@@ -1,3 +1,7 @@
+# 1.0.9
+fixed typo in roll breakdown
+# 1.0.8
+added breakdown to rolls
 # 1.0.7
 fixed typo
 # 1.0.6
