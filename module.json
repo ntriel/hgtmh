@@ -2,21 +2,21 @@
 	"name": "helinanas-guide-to-monster-hunting",
 	"title": "Helinana's Guide to Monster Hunting",
 	"description": "A simple module which adds a user specific to do list.",
+	"version": "1.0.0",
+	"minimumCoreVersion": "0.8.8",
+	"compatibleCoreVersion": "9",
+	"socket": true,
 	"authors": [{
 		"name": "Νtriel#9341"
 	}, {
 		"name": "TheRedMage#9054"
 	}],
-	"version": "1.0.0",
-	"minimumCoreVersion": "0.8.8",
-	"compatibleCoreVersion": "9",
 	"styles": [
 		"css/hgtmh.css"
 	],
 	"scripts": [
 		"js/harvesting.js"
 	],
-	"socket": true,
 	"url": "https://github.com/ntriel/hgtmh",
 	"download": "https://github.com/ntriel/hgtmh/archive/v1.0.0.zip",
 	"manifest": "https://raw.githubusercontent.com/ntriel/hgtmh/main/module.json",
