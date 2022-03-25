@@ -1,3 +1,6 @@
+# 1.0.12
+added packs file and a compendium holding the macro for harvesting<br>
+added system info to module.json
 # 1.0.11
 adjusted styling of harvest message to include first name and image of who rolled the check
 # 1.0.10
