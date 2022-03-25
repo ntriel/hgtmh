@@ -2,7 +2,7 @@
 	"name": "hgtmh",
 	"title": "Helinana's Guide to Monster Hunting",
 	"description": "A simple module which adds a user specific to do list.",
-	"version": "1.0.10",
+	"version": "1.0.11",
 	"minimumCoreVersion": "0.8.8",
 	"compatibleCoreVersion": "9",
 	"socket": true,
@@ -18,7 +18,7 @@
 		"js/harvesting.js"
 	],
 	"url": "https://github.com/ntriel/hgtmh",
-	"download": "https://github.com/ntriel/hgtmh/archive/v1.0.10.zip",
+	"download": "https://github.com/ntriel/hgtmh/archive/v1.0.11.zip",
 	"manifest": "https://raw.githubusercontent.com/ntriel/hgtmh/main/module.json",
 	"readme": "https://github.com/ntriel/hgtmh/blob/main/README.md",
 	"changelog": "https://github.com/ntriel/hgtmh/blob/main/CHANGELOG.md",
