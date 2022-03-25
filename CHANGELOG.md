@@ -1,3 +1,5 @@
+# 1.0.7
+fixed typo
 # 1.0.6
 removed unneeded console logs<br>
 adjusted the breakdown display of dice rolled
