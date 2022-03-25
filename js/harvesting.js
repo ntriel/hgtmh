@@ -24,13 +24,15 @@ let HARVEST_MESSAGE = `
 	<table data-creatureType="{creatureType}" data-creatureName="{creatureName}">
 		<tr>
 			<th title="Intelligence Check" >Assessment Check</th>
-			<th class='hgtmh-harvest-roller' ></th>
-			<th class='hgtmh-30-square'><div id='{id1}' class='hgtmh-roll-button' src='{d20}' title="" type="image" width="30" height="30" data-rolled='false' data-ability="int"></div></th>
+			<th class="hgtmh-roller-name"></th>
+			<th class='hgtmh-30-square' ></th>
+			<th class='hgtmh-30-square'><div id='{id1}' class='hgtmh-roll-button' src='{d20}' title="" type="image" data-rolled='false' data-ability="int"></div></th>
 		</tr>
-		<tr>
-			<th title="Dexterity Check" >Carving Check</th>
-			<th class='hgtmh-harvest-roller' ></th>
-			<th class='hgtmh-30-square'><div id='{id2}' class='hgtmh-roll-button' src='{d20}' title="" type="image" width="30" height="30" data-rolled='false' data-ability="dex"></div></th>
+		<tr >
+			<th title="Dexterity Check">Carving Check</th>
+			<th class="hgtmh-roller-name"></th>
+			<th class='hgtmh-30-square'></th>
+			<th class='hgtmh-30-square'><div id='{id2}' class='hgtmh-roll-button' src='{d20}' title="" type="image" data-rolled='false' data-ability="dex"></div></th>
 		</tr>
 	</table>
 	<table>
@@ -124,6 +126,8 @@ Hooks.on('renderChatMessage', (chatItem, html) => {
 			// theElement.singleNodeValue.innerText = actor.name.split(" ")[0];
 			
 			theElement = htmlDoc.evaluate(`(//div[@id='${e.currentTarget.attributes["id"].value}']/../../th)[2]`, htmlDoc, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+			theElement.innerText = actor.name.split(" ")[0];
+			theElement = htmlDoc.evaluate(`(//div[@id='${e.currentTarget.attributes["id"].value}']/../../th)[3]`, htmlDoc, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
 			theElement.innerHTML = `<img title="${actor.name}" class="hgtmh-harvest-player-img" src="${actor.img}" />`;
 			
 			
