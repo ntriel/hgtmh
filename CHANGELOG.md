@@ -1,3 +1,5 @@
+# 1.0.11
+adjusted styling of harvest message to include first name and image of who rolled the check
 # 1.0.10
 changed the harvest message to include who rolled the check
 # 1.0.9
