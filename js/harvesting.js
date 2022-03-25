@@ -95,7 +95,7 @@ Hooks.on('renderChatMessage', (chatItem, html) => {
 
             let theResult = roll.total;
 
-            let currentTotal = Number(e.currentTarget.parentElement.parentElement.parentElement.parentElement.parentElement.children[1].children[0].children[0].children[1].children[0].innerText);
+            let currentTotal = Number(e.currentTarget.parentElement.parentElement.parentElement.parentElement.parentElement.children[3].children[0].children[0].children[1].children[0].innerText);
             currentTotal += theResult;
             let chatMessage = game.messages.get(e.currentTarget.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.getAttribute("data-message-id"));
             let content = chatMessage.data.content;
