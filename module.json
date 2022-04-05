@@ -2,7 +2,7 @@
 	"name": "hgtmh",
 	"title": "Helinana's Guide to Monster Hunting",
 	"description": "Adds a macro and functionality to automatically request rolls for harvesting creature token.",
-	"version": "1.0.13",
+	"version": "1.0.14",
 	"minimumCoreVersion": "0.8.8",
 	"compatibleCoreVersion": "9",
 	"system": "dnd5e",

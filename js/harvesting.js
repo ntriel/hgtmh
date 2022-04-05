@@ -1,6 +1,10 @@
 
-Hooks.on("init", async function () {
-    
+Hooks.once("init", async function () {
+    school = game.dnd5e.config.spellSchools
+    school["bio"] = "Biomancy"
+
+    game.dnd5e.config.spellSchools = school
+
 });
 
 Hooks.on("ready", async function () {
