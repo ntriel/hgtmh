@@ -15,6 +15,13 @@
 	height:30px;
 	text-align: center;
 	line-height: 30px;
+	
+	margin: 0;
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--color-border-light-2);
+    border-radius: 3px;
+    box-shadow: 0 0 2px #fff inset;
+    word-break: break-all;
 }
 
 .hgtmh-30-square{
@@ -39,4 +46,22 @@
 	height:auto;
 	display: inline;
 	float:right;
+}
+
+.hgtmh-center-text{
+	text-align: center;
+}
+
+.hgtm-crafting-dropdown{
+	margin-bottom: 10px;
+}
+.hgtmh-rolled-result{
+	margin: 0;
+    line-height: 24px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--color-border-light-2);
+    border-radius: 3px;
+    box-shadow: 0 0 2px #fff inset;
+    word-break: break-all;
 }
