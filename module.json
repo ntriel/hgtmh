@@ -1,8 +1,8 @@
 {
 	"name": "hgtmh",
-	"title": "Helinana's Guide to Monster Hunting",
+	"title": "Heliana's Guide To Monster Hunting",
 	"description": "Adds a macro and functionality to automatically request rolls for harvesting creature token.",
-	"version": "1.0.15",
+	"version": "1.0.16",
 	"minimumCoreVersion": "0.8.8",
 	"compatibleCoreVersion": "9",
 	"system": "dnd5e",
@@ -20,15 +20,15 @@
 	],
 	"packs": [
 		{
-			"name": "helinanas-harvesting-macros",
-			"label": "Helinana's Harvesting Macros",
+			"name": "helianas-harvesting-macros",
+			"label": "Heliana's Harvesting Macros",
 			"system": "dnd5e",
-			"path": "./packs/helinanas-harvesting-macros.db",
+			"path": "./packs/helianas-harvesting-macros.db",
 			"entity": "Macro"
 		}
 	],
 	"url": "https://github.com/ntriel/hgtmh",
-	"download": "https://github.com/ntriel/hgtmh/archive/v1.0.15.zip",
+	"download": "https://github.com/ntriel/hgtmh/archive/v1.0.16.zip",
 	"manifest": "https://raw.githubusercontent.com/ntriel/hgtmh/main/module.json",
 	"readme": "https://github.com/ntriel/hgtmh/blob/main/README.md",
 	"changelog": "https://github.com/ntriel/hgtmh/blob/main/CHANGELOG.md",
