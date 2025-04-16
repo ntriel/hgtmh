@@ -1,3 +1,7 @@
+# 1.0.15
+Changed Harvest Roll Result appearance
+# 1.0.14
+Added spell school Biomancy
 # 1.0.13
 fixed packs in module.json
 # 1.0.12

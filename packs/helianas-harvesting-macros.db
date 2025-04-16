@@ -1,0 +1,1 @@
+{"name":"Harvest","type":"script","author":"gCz7jQXeaUhDkh42","img":"icons/svg/dice-target.svg","scope":"global","command":"canvas.tokens.controlled.forEach(token => CreateHarvestMessage(token));","folder":null,"sort":0,"permission":{"default":0,"gCz7jQXeaUhDkh42":3},"flags":{"core":{"sourceId":"Macro.AvdOUsjl9beJX7C2"}},"_id":"C9bcDiASAORkyWDI"}

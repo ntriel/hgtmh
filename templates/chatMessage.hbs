@@ -1,0 +1,29 @@
+<div class="hgtmh-message">
+    <h2>{{creatureName}}</h2>
+    <p>{{skillReq}}</p>
+    <table data-creatureType="{{creatureType}}" data-creatureName="{{creatureName}}">
+        <tr>
+            <th title="Intelligence Check" >Assessment Check</th>
+            <th class="hgtmh-assessment-name"></th>
+            <th class='hgtmh-30-square hgtmh-assessment-img' ></th>
+            <th class='hgtmh-30-square'><div id='{{id1}}' class='hgtmh-roll-button hgtmh-roll-assessment' src='{{d20}}' title="" type="image" data-rolled='false'></div></th>
+        </tr>
+        <tr >
+            <th title="Dexterity Check">Carving Check</th>
+            <th class="hgtmh-carving-name"></th>
+            <th class='hgtmh-30-square hgtmh-carving-img'></th>
+            <th class='hgtmh-30-square'><div id='{{id2}}' class='hgtmh-roll-button hgtmh-roll-carving' src='{{d20}}' title="" type="image" data-rolled='false'></div></th>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th>Total</th>
+            <th><a id="{{id3}}" class="hgtmh-total">0</th>
+            {{#if isGM}}
+            <th class='hgtmh-30-square'>
+                <div id='{{id4}}' class='hgtmh-finish'></div>
+            </th>
+            {{/if}}
+        </tr>
+    </table>
+</div>
