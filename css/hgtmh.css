@@ -10,6 +10,20 @@
 	background: url('/icons/svg/d20-highlight.svg');
 }
 
+.hgtmh-finish{
+	width:30px;
+	height:30px;
+	text-align: center;
+	line-height: 30px;
+	background: url('/icons/svg/d20-grey.svg') no-repeat;
+	background-size: cover;
+}
+.hgtmh-finish:hover{
+	background: url('/icons/svg/d20-black.svg') no-repeat;
+	background-size: cover;
+}
+
+
 .hgtmh-rolled-button{
 	width:30px;
 	height:30px;

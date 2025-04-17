@@ -1,37 +1,69 @@
 {
-	"name": "hgtmh",
-	"title": "Heliana's Guide To Monster Hunting",
-	"description": "Adds a macro and functionality to automatically request rolls for harvesting creature token.",
-	"version": "1.0.16",
-	"minimumCoreVersion": "0.8.8",
-	"compatibleCoreVersion": "9",
-	"system": "dnd5e",
-	"socket": true,
-	"authors": [{
-		"name": "Νtriel#9341"
-	}, {
-		"name": "TheRedMage#9054"
-	}],
-	"styles": [
-		"css/hgtmh.css"
-	],
-	"scripts": [
-		"js/harvesting.js"
-	],
-	"packs": [
-		{
-			"name": "helianas-harvesting-macros",
-			"label": "Heliana's Harvesting Macros",
-			"system": "dnd5e",
-			"path": "./packs/helianas-harvesting-macros.db",
-			"entity": "Macro"
-		}
-	],
-	"url": "https://github.com/ntriel/hgtmh",
-	"download": "https://github.com/ntriel/hgtmh/archive/v1.0.16.zip",
-	"manifest": "https://raw.githubusercontent.com/ntriel/hgtmh/main/module.json",
-	"readme": "https://github.com/ntriel/hgtmh/blob/main/README.md",
-	"changelog": "https://github.com/ntriel/hgtmh/blob/main/CHANGELOG.md",
-	"bugs": "https://github.com/ntriel/hgtmh/issues",
-	"allowBugReporter": false
+  "title": "Heliana's Harvesting Tool",
+  "description": "Adds a macro and functionality to automatically request rolls for harvesting creature token.",
+  "version": "1.1.0",
+  "socket": true,
+  "authors": [
+    {
+      "name": "Νtriel#9341",
+      "flags": {}
+    },
+    {
+      "name": "TheRedMage#9054",
+      "flags": {}
+    }
+  ],
+  "styles": [
+    "css/hgtmh.css"
+  ],
+  "esmodules": [
+    "js/harvesting.js"
+  ],
+  "packs": [
+    {
+      "name": "helianas-harvesting-macros",
+      "label": "Heliana's Harvesting Macros",
+      "path": "packs/helianas-harvesting-macros",
+      "type": "Macro",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "url": "https://github.com/ntriel/hgtmh",
+  "download": "https://github.com/ntriel/hgtmh/archive/v1.0.16.zip",
+  "manifest": "https://raw.githubusercontent.com/ntriel/hgtmh/main/module.json",
+  "readme": "https://github.com/ntriel/hgtmh/blob/main/README.md",
+  "changelog": "https://github.com/ntriel/hgtmh/blob/main/CHANGELOG.md",
+  "bugs": "https://github.com/ntriel/hgtmh/issues",
+  "id": "hgtmh",
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {}
+      }
+    ],
+    "requires": [
+      {
+        "id": "helianas-harvesting",
+        "type": "module",
+        "compatibility": {}
+      }
+    ],
+    "recommends": [
+      {
+        "id": "heliana-core",
+        "type": "module",
+        "compatibility": {}
+      }
+    ]
+  },
+  "compatibility": {
+    "minimum": "0.8.8",
+    "verified": "12"
+  }
 }
